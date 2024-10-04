@@ -1,0 +1,15 @@
+import flask
+
+app = flask.Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello World!'
+
+if __name__ == '__main__':
+    # Checks for app.yaml before running
+    import os
+    if os.path.exists("app.yaml"):
+        app.run(host='127.0.0.1', port=8080, debug=True)
+    else:
+        print("app.yaml not found!")
