@@ -1,0 +1,8 @@
+def create_resource():
+    # Creates resource only if it does not exist
+    if not resource_exists():  
+        print("Creating new resource")
+        # create resource
+
+create_resource() # Creates resource
+create_resource() # Idempotent, no-op
