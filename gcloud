@@ -1,0 +1,5 @@
+gcloud app deploy # Deploys an App Engine application
+
+gcloud sql databases create mydb # Creates Cloud SQL database  
+
+gcloud auth login # Authenticates gcloud CLI
